@@ -18,7 +18,7 @@ namespace GameTheories.es_zamanli._1vs1
             InitializeComponent();
             met1 = metin2;
             met2 = metin2;
-            //veriyi çektik form1 deki seçimlere göre heroları kullancaz burda 
+            //veriyi çektik form1 deki seçimlere göre heroları kullancaz burda  
         }
 
         private void sonucaGec_FormClosed(object sender, FormClosedEventArgs e)
