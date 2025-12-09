@@ -1,0 +1,124 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="iconlar\sagOk.ico" />
+    <None Remove="iconlar\solOk.ico" />
+    <None Remove="resimler\herolar\affetmez_ayna.png" />
+    <None Remove="resimler\herolar\fırsatçı.png" />
+    <None Remove="resimler\herolar\grupcu.png" />
+    <None Remove="resimler\herolar\hain_hafiza.png" />
+    <None Remove="resimler\herolar\hepsi.png" />
+    <None Remove="resimler\herolar\intikamcı.png" />
+    <None Remove="resimler\herolar\kopyaci.png" />
+    <None Remove="resimler\herolar\poncik.png" />
+    <None Remove="resimler\herolar\sansli_cimbom.png" />
+    <None Remove="resimler\herolar\Sinsi.png" />
+    <None Remove="resimler\herolar\sömürücü.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_6vv7ye6vv7ye6vv7.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_7b43l97b43l97b43.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_biwkbvbiwkbvbiwk.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_cnopwucnopwucnop.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_gxu8figxu8figxu8.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_idk0fqidk0fqidk0.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_lyi8xvlyi8xvlyi8.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_m3dc7qm3dc7qm3dc.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_p9q06xp9q06xp9q0.png" />
+    <None Remove="resimler\tahta\Gemini_Generated_Image_po6uv8po6uv8po6u.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="iconlar\sagOk.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconlar\solOk.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\affetmez_ayna.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\fırsatçı.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\grupcu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\hain_hafiza.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\hepsi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\intikamcı.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\kopyaci.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\poncik.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\sansli_cimbom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\Sinsi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\sömürücü.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_6vv7ye6vv7ye6vv7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_7b43l97b43l97b43.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_biwkbvbiwkbvbiwk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_cnopwucnopwucnop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_gxu8figxu8figxu8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_idk0fqidk0fqidk0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_lyi8xvlyi8xvlyi8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_m3dc7qm3dc7qm3dc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_p9q06xp9q06xp9q0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\tahta\Gemini_Generated_Image_po6uv8po6uv8po6u.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
