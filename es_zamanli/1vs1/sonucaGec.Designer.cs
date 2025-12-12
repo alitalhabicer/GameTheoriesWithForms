@@ -43,8 +43,12 @@
             oyunsayisilbl = new Label();
             button1 = new Button();
             button3 = new Button();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -63,7 +67,7 @@
             // 
             hero1lbl.AutoSize = true;
             hero1lbl.Font = new Font("Stencil", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            hero1lbl.Location = new Point(162, 42);
+            hero1lbl.Location = new Point(180, 151);
             hero1lbl.Name = "hero1lbl";
             hero1lbl.Size = new Size(46, 27);
             hero1lbl.TabIndex = 1;
@@ -74,11 +78,12 @@
             // 
             hero2lbl.AutoSize = true;
             hero2lbl.Font = new Font("Stencil", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            hero2lbl.Location = new Point(956, 42);
+            hero2lbl.Location = new Point(956, 151);
             hero2lbl.Name = "hero2lbl";
             hero2lbl.Size = new Size(46, 27);
             hero2lbl.TabIndex = 2;
             hero2lbl.Text = "Siz";
+            hero2lbl.Click += hero2lbl_Click;
             // 
             // pictureBox2
             // 
@@ -199,12 +204,37 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Location = new Point(117, 65);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(183, 113);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 16;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Location = new Point(903, 65);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(183, 113);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 17;
+            pictureBox4.TabStop = false;
+            // 
             // sonucaGec
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GrayText;
             ClientSize = new Size(1232, 703);
+            Controls.Add(hero1lbl);
+            Controls.Add(hero2lbl);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
             Controls.Add(button3);
             Controls.Add(button1);
             Controls.Add(oyunsayisilbl);
@@ -215,8 +245,6 @@
             Controls.Add(label2);
             Controls.Add(hero1nameendlbl);
             Controls.Add(kazananlbl);
-            Controls.Add(hero2lbl);
-            Controls.Add(hero1lbl);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             ForeColor = SystemColors.ControlLightLight;
@@ -228,6 +256,8 @@
             Load += sonucaGec_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -248,5 +278,7 @@
         private Label oyunsayisilbl;
         private Button button1;
         private Button button3;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
     }
 }

@@ -22,6 +22,7 @@
     <None Remove="resimler\herolar\sansli_cimbom.png" />
     <None Remove="resimler\herolar\Sinsi.png" />
     <None Remove="resimler\herolar\sömürücü.png" />
+    <None Remove="resimler\herolar\tac.png" />
     <None Remove="resimler\tahta\Gemini_Generated_Image_6vv7ye6vv7ye6vv7.png" />
     <None Remove="resimler\tahta\Gemini_Generated_Image_7b43l97b43l97b43.png" />
     <None Remove="resimler\tahta\Gemini_Generated_Image_biwkbvbiwkbvbiwk.png" />
@@ -72,6 +73,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="resimler\herolar\sömürücü.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resimler\herolar\tac.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="resimler\tahta\Gemini_Generated_Image_6vv7ye6vv7ye6vv7.png">

@@ -169,7 +169,7 @@
             numericUpDown1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             numericUpDown1.ForeColor = SystemColors.ControlLightLight;
             numericUpDown1.Location = new Point(555, 140);
-            numericUpDown1.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+            numericUpDown1.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(150, 26);
             numericUpDown1.TabIndex = 12;

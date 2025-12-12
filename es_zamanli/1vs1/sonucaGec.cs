@@ -707,6 +707,15 @@ namespace GameTheories.es_zamanli._1vs1
             sonuc1lbl.Text = Convert.ToString(sonuc1);
             sonuc2lbl.Text = Convert.ToString(sonuc2);
             oyunsayisilbl.Text = Convert.ToString(oynananOyun);
+
+            if (sonuc1 < sonuc2)
+            {
+                pictureBox4.Image = Image.FromFile(@"resimler\herolar\tac.png");
+            }
+            else if (sonuc1 > sonuc2)
+            {
+                pictureBox3.Image = Image.FromFile(@"resimler\herolar\tac.png");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -720,8 +729,18 @@ namespace GameTheories.es_zamanli._1vs1
         private void button3_Click(object sender, EventArgs e)
         {
             Form1 herosec = new Form1();
-            herosec.Show(); 
-            this.Hide();    
+            herosec.Show();
+            this.Hide();
+        }
+
+        private void hero2lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
