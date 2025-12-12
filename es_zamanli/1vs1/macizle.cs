@@ -12,12 +12,14 @@ namespace GameTheories.es_zamanli._1vs1
 {
     public partial class macIzle : Form
     {  
-        string met1; string met2; 
-        public macIzle(string metin1 , string metin2 )
+        string met1; string met2 ;
+        int oyunsayısı;
+        public macIzle(string metin1 , string metin2,int oyunsayisi )
         {
             InitializeComponent();
            met1  = metin1; 
             met2 = metin2;
+            oyunsayısı = oyunsayisi;
             //veriyi çektik form1 deki seçimlere göre heroları kullancaz burda 
         }
 

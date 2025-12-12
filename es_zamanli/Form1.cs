@@ -279,40 +279,48 @@ Herolar*/
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {
-            string hero1lbl = hero1LBL.Text; 
-            string hero2lbl = hero2LBL.Text; 
+        { if(numericUpDown1.Value== 0 )
+            {
+                uyari2.Visible = true; 
+            }
+            else { 
+                string hero1lbl = hero1LBL.Text; 
+            string hero2lbl = hero2LBL.Text;
+            int oyunsayisi = Convert.ToInt32(numericUpDown1.Value); 
             if (hero1LBL.Text == "Siz" && hero2LBL.Text == "Siz")
             {
                 label3.Text = "iki hero da siz olamazsiniz";
                 label3.Visible = true;
             }
 
-            if (macizle.Enabled == true)
+
+            if (macizle.Checked == true)
             {
-                macIzle mac1 = new macIzle(hero1lbl, hero2lbl);
+                macIzle mac1 = new macIzle(hero1lbl, hero2lbl, oyunsayisi);
                 mac1.Show();
                 this.Hide();
             }
-            else if (sonucGit.Enabled == true)
+
+            else if (sonucGit.Checked == true)
             {
-                sonucaGec sonucmac1 = new sonucaGec(hero1lbl, hero2lbl);
+                sonucaGec sonucmac1 = new sonucaGec(hero1lbl, hero2lbl, oyunsayisi);
                 sonucmac1.Show();
                 this.Hide();
             }
 
             if (hero1LBL.Text == "Siz" && hero2LBL.Text != "Siz" || hero2LBL.Text == "Siz" && hero1LBL.Text != "Siz")
             {
-                sizVs sizmac1 = new sizVs(hero1lbl, hero2lbl);
+                sizVs sizmac1 = new sizVs(hero1lbl, hero2lbl, oyunsayisi);
                 sizmac1.Show();
                 this.Hide();
             }
-
+            }
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             int oyunSayisi = (int)numericUpDown1.Value;
+            uyari2.Visible = false; 
         }
 
        

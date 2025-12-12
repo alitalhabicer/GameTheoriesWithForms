@@ -48,12 +48,12 @@ namespace GameTheories
 
         private void NasilOynanirBT_Click_1(object sender, EventArgs e)
         {
-            if (tmr1.Enabled == false)
-            {
+            
+            
                 NasilOynanir nasilOynanir = new NasilOynanir();
                 nasilOynanir.Show();
                 this.Hide();
-            }
+            
         }
 
         private void FormClosed(object sender, FormClosedEventArgs e)

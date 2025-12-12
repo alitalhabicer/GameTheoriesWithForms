@@ -44,7 +44,7 @@
             button5 = new Button();
             macizle = new RadioButton();
             sonucGit = new RadioButton();
-            label4 = new Label();
+            uyari2 = new Label();
             ((System.ComponentModel.ISupportInitialize)hero1P).BeginInit();
             ((System.ComponentModel.ISupportInitialize)hero2P).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -203,7 +203,6 @@
             // 
             macizle.AutoSize = true;
             macizle.BackColor = SystemColors.GrayText;
-            macizle.Enabled = false;
             macizle.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             macizle.ForeColor = SystemColors.ControlLightLight;
             macizle.Location = new Point(512, 345);
@@ -217,7 +216,6 @@
             // sonucGit
             // 
             sonucGit.AutoSize = true;
-            sonucGit.Enabled = false;
             sonucGit.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             sonucGit.ForeColor = SystemColors.ControlLightLight;
             sonucGit.Location = new Point(512, 404);
@@ -228,15 +226,17 @@
             sonucGit.Text = "Direkt sonuca git";
             sonucGit.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // uyari2
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = SystemColors.ControlLightLight;
-            label4.Location = new Point(139, 266);
-            label4.Name = "label4";
-            label4.Size = new Size(988, 20);
-            label4.TabIndex = 17;
-            label4.Text = "Yapmamız gereken şuan  oyun sayısı ekledim yeni onu ayarlicaz sonra maç izleme ve direkt sonuca gitme butonlarına göre birşeyler yapcaz bu kadar";
+            uyari2.AutoSize = true;
+            uyari2.Font = new Font("Stencil", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uyari2.ForeColor = Color.LightCoral;
+            uyari2.Location = new Point(534, 186);
+            uyari2.Name = "uyari2";
+            uyari2.Size = new Size(191, 18);
+            uyari2.TabIndex = 17;
+            uyari2.Text = "Lutfen bir sayi  giriniz";
+            uyari2.Visible = false;
             // 
             // Form1
             // 
@@ -244,8 +244,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GrayText;
             ClientSize = new Size(1232, 703);
+            Controls.Add(uyari2);
             Controls.Add(label3);
-            Controls.Add(label4);
             Controls.Add(sonucGit);
             Controls.Add(macizle);
             Controls.Add(numericUpDown1);
@@ -286,8 +286,8 @@
         private Button button5;
         private RadioButton macizle;
         private RadioButton sonucGit;
-        private Label label4;
         public Label hero1LBL;
         public PictureBox hero2P;
+        private Label uyari2;
     }
 }
