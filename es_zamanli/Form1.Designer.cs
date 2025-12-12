@@ -169,9 +169,12 @@
             numericUpDown1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             numericUpDown1.ForeColor = SystemColors.ControlLightLight;
             numericUpDown1.Location = new Point(555, 140);
+            numericUpDown1.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(150, 26);
             numericUpDown1.TabIndex = 12;
+            numericUpDown1.TextAlign = HorizontalAlignment.Center;
+            numericUpDown1.Value = new decimal(new int[] { 10, 0, 0, 0 });
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // label3
@@ -203,6 +206,7 @@
             // 
             macizle.AutoSize = true;
             macizle.BackColor = SystemColors.GrayText;
+            macizle.Enabled = false;
             macizle.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             macizle.ForeColor = SystemColors.ControlLightLight;
             macizle.Location = new Point(512, 345);
@@ -216,6 +220,7 @@
             // sonucGit
             // 
             sonucGit.AutoSize = true;
+            sonucGit.Enabled = false;
             sonucGit.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             sonucGit.ForeColor = SystemColors.ControlLightLight;
             sonucGit.Location = new Point(512, 404);

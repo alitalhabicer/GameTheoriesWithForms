@@ -574,83 +574,104 @@ namespace GameTheories.es_zamanli._1vs1
                 if (met1 == "Kopyaci")
                 {
                     Kopyaci1();
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\kopyaci.png");
                 }
                 else if (met1 == "Poncik")
                 {
                     poncik1();
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\poncik.png");
                 }
                 else if (met1 == "Sinsi")
                 {
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\Sinsi.png");
                     sinsi1();
                 }
                 else if (met1 == "Hain Hafiza")
                 {
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\hain_hafiza.png");
                     hainHafiza1();
+
                 }
                 else if (met1 == "Sansli")
                 {
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\sansli_cimbom.png");
                     sansliCimbom1();
                 }
                 else if (met1 == "Affeden Ayna")
                 {
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\affetmez_ayna.png");
                     affedenAyna1();
                 }
                 else if (met1 == "Somurucu")
                 {
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\sömürücü.png");
                     somurucu1();
                 }
                 else if (met1 == "Grupcu")
                 {
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\grupcu.png");
                     somurucu1();
                 }
                 else if (met1 == "Intikamcı")
                 {
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\intikamcı.png");
                     intikamci1();
                 }
                 else if (met1 == "Firsatcı")
                 {
+                    pictureBox1.Image = Image.FromFile(@"resimler\herolar\fırsatçı.png");
                     fırsatcı1();
                 }
 
 
                 if (met2 == "Kopyaci")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\kopyaci.png");
                     Kopyaci2();
                 }
                 else if (met2 == "Poncik")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\poncik.png");
                     poncik2();
                 }
                 else if (met2 == "Sinsi")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\Sinsi.png");
                     sinsi2();
                 }
                 else if (met2 == "Hain Hafiza")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\hain_hafiza.png");
                     hainHafiza2();
                 }
                 else if (met2 == "Sansli")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\sansli_cimbom.png");
                     sansliCimbom2();
                 }
                 else if (met2 == "Affeden Ayna")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\affetmez_ayna.png");
                     affedenAyna2();
                 }
                 else if (met2 == "Somurucu")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\sömürücü.png");
                     somurucu2();
                 }
                 else if (met2 == "Grupcu")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\grupcu.png");
                     somurucu2();
                 }
                 else if (met2 == "Intikamcı")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\intikamcı.png");
                     intikamci2();
                 }
                 else if (met2 == "Firsatcı")
                 {
+                    pictureBox2.Image = Image.FromFile(@"resimler\herolar\fırsatçı.png");
                     fırsatcı2();
                 }
 
@@ -685,7 +706,22 @@ namespace GameTheories.es_zamanli._1vs1
             hero2nameendlbl.Text = met2;
             sonuc1lbl.Text = Convert.ToString(sonuc1);
             sonuc2lbl.Text = Convert.ToString(sonuc2);
-            oyunsayisilbl.Text = Convert.ToString(oynananOyun) ; 
+            oyunsayisilbl.Text = Convert.ToString(oynananOyun);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GamePlay herolar = new GamePlay();
+            herolar.Show();
+            this.Hide();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 herosec = new Form1();
+            herosec.Show(); 
+            this.Hide();    
         }
     }
 }

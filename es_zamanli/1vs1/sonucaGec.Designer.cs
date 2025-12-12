@@ -34,7 +34,6 @@
             hero2lbl = new Label();
             pictureBox2 = new PictureBox();
             kazananlbl = new Label();
-            nameKazananlbl = new Label();
             hero1nameendlbl = new Label();
             label2 = new Label();
             hero2nameendlbl = new Label();
@@ -42,16 +41,20 @@
             sonuc2lbl = new Label();
             label1 = new Label();
             oyunsayisilbl = new Label();
+            button1 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = SystemColors.GrayText;
             pictureBox1.Dock = DockStyle.Left;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(485, 703);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -79,10 +82,12 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = SystemColors.GrayText;
             pictureBox2.Dock = DockStyle.Right;
             pictureBox2.Location = new Point(747, 0);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(485, 703);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
@@ -91,30 +96,18 @@
             kazananlbl.AutoSize = true;
             kazananlbl.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             kazananlbl.ForeColor = Color.LightCoral;
-            kazananlbl.Location = new Point(549, 42);
+            kazananlbl.Location = new Point(563, 208);
             kazananlbl.Name = "kazananlbl";
-            kazananlbl.Size = new Size(140, 33);
+            kazananlbl.Size = new Size(110, 33);
             kazananlbl.TabIndex = 4;
-            kazananlbl.Text = "Kazanan";
+            kazananlbl.Text = "SONUC ";
             kazananlbl.Click += kazananlbl_Click;
-            // 
-            // nameKazananlbl
-            // 
-            nameKazananlbl.AutoSize = true;
-            nameKazananlbl.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            nameKazananlbl.Location = new Point(543, 89);
-            nameKazananlbl.Name = "nameKazananlbl";
-            nameKazananlbl.Size = new Size(156, 21);
-            nameKazananlbl.TabIndex = 5;
-            nameKazananlbl.Text = "Kazananin ismi ";
-            nameKazananlbl.TextAlign = ContentAlignment.MiddleCenter;
-            nameKazananlbl.Visible = false;
             // 
             // hero1nameendlbl
             // 
             hero1nameendlbl.AutoSize = true;
             hero1nameendlbl.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            hero1nameendlbl.Location = new Point(505, 193);
+            hero1nameendlbl.Location = new Point(505, 268);
             hero1nameendlbl.Name = "hero1nameendlbl";
             hero1nameendlbl.Size = new Size(69, 21);
             hero1nameendlbl.TabIndex = 6;
@@ -124,7 +117,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(604, 193);
+            label2.Location = new Point(604, 268);
             label2.Name = "label2";
             label2.Size = new Size(23, 35);
             label2.TabIndex = 7;
@@ -134,7 +127,7 @@
             // 
             hero2nameendlbl.AutoSize = true;
             hero2nameendlbl.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            hero2nameendlbl.Location = new Point(647, 193);
+            hero2nameendlbl.Location = new Point(647, 268);
             hero2nameendlbl.Name = "hero2nameendlbl";
             hero2nameendlbl.Size = new Size(69, 21);
             hero2nameendlbl.TabIndex = 8;
@@ -144,7 +137,7 @@
             // 
             sonuc1lbl.AutoSize = true;
             sonuc1lbl.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sonuc1lbl.Location = new Point(505, 229);
+            sonuc1lbl.Location = new Point(505, 304);
             sonuc1lbl.Name = "sonuc1lbl";
             sonuc1lbl.Size = new Size(76, 21);
             sonuc1lbl.TabIndex = 9;
@@ -154,7 +147,7 @@
             // 
             sonuc2lbl.AutoSize = true;
             sonuc2lbl.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sonuc2lbl.Location = new Point(647, 229);
+            sonuc2lbl.Location = new Point(647, 304);
             sonuc2lbl.Name = "sonuc2lbl";
             sonuc2lbl.Size = new Size(76, 21);
             sonuc2lbl.TabIndex = 10;
@@ -164,7 +157,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Snap ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(491, 270);
+            label1.Location = new Point(491, 345);
             label1.Name = "label1";
             label1.Size = new Size(200, 19);
             label1.TabIndex = 11;
@@ -174,11 +167,37 @@
             // 
             oyunsayisilbl.AutoSize = true;
             oyunsayisilbl.Font = new Font("Stencil", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            oyunsayisilbl.Location = new Point(680, 271);
+            oyunsayisilbl.Location = new Point(680, 346);
             oyunsayisilbl.Name = "oyunsayisilbl";
             oyunsayisilbl.Size = new Size(61, 18);
             oyunsayisilbl.TabIndex = 12;
             oyunsayisilbl.Text = "label3";
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.GrayText;
+            button1.Font = new Font("Stencil", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Location = new Point(229, 599);
+            button1.Name = "button1";
+            button1.Size = new Size(232, 29);
+            button1.TabIndex = 13;
+            button1.Text = "Herolarin özellikleri";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.GrayText;
+            button3.Font = new Font("Stencil", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ControlLightLight;
+            button3.Location = new Point(770, 599);
+            button3.Name = "button3";
+            button3.Size = new Size(232, 29);
+            button3.TabIndex = 15;
+            button3.Text = "Tekrar Hero Sec";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // sonucaGec
             // 
@@ -186,6 +205,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GrayText;
             ClientSize = new Size(1232, 703);
+            Controls.Add(button3);
+            Controls.Add(button1);
             Controls.Add(oyunsayisilbl);
             Controls.Add(label1);
             Controls.Add(sonuc2lbl);
@@ -193,7 +214,6 @@
             Controls.Add(hero2nameendlbl);
             Controls.Add(label2);
             Controls.Add(hero1nameendlbl);
-            Controls.Add(nameKazananlbl);
             Controls.Add(kazananlbl);
             Controls.Add(hero2lbl);
             Controls.Add(hero1lbl);
@@ -219,7 +239,6 @@
         private Label hero2lbl;
         private PictureBox pictureBox2;
         private Label kazananlbl;
-        private Label nameKazananlbl;
         private Label hero1nameendlbl;
         private Label label2;
         private Label hero2nameendlbl;
@@ -227,5 +246,7 @@
         private Label sonuc2lbl;
         private Label label1;
         private Label oyunsayisilbl;
+        private Button button1;
+        private Button button3;
     }
 }
